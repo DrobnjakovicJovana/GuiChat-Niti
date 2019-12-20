@@ -155,6 +155,7 @@ public class KlijentForma extends javax.swing.JFrame {
         kz.setPoruka(jtxtTekst.getText());
         kz.setUsername(username);
         PovezivanjeServer.getInstance().posaljiZahtev(kz);
+        jtxtTekst.setText("");
 //        ServerskiOdgovor so = PovezivanjeServer.getInstance().primiOdgovor();
 //        String kon = jtxtKonverzacija.getText()+"\n" + so.getPoruka();
 //        jtxtKonverzacija.setText(kon);
@@ -221,6 +222,8 @@ public class KlijentForma extends javax.swing.JFrame {
     public void sredi() {
         setTitle("Korisnik: " +username);
         jtxtKonverzacija.setEditable(false);
+        jtxtOnlineKorisnici.setEditable(false);
+        setLocationRelativeTo(null);
     }
 
 }

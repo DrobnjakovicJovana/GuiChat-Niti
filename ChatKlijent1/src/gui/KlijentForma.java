@@ -219,7 +219,7 @@ public class KlijentForma extends javax.swing.JFrame {
     }
 
     public void sredi() {
-        setTitle(username);
+        setTitle("Korisnik: " +username);
         jtxtKonverzacija.setEditable(false);
     }
 
